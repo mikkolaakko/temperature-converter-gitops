@@ -1,0 +1,35 @@
+affinity: {}
+autoscaling:
+  enabled: false
+  maxReplicas: 100
+  minReplicas: 1
+  targetCPUUtilizationPercentage: 80
+fullnameOverride: ''
+image:
+  pullPolicy: Always
+  repository: 'image-name'
+  tag: 'image-tag'
+imagePullSecrets: []
+ingress:
+  annotations: {}
+  enabled: false
+  hosts:
+  - host: chart-example.local
+    paths: []
+  tls: []
+initialDelaySeconds: 5
+nameOverride: ''
+nodeSelector: {}
+podAnnotations: {}
+podSecurityContext: {}
+replicaCount: 1
+resources: {}
+securityContext: {}
+service:
+  port: 3000
+  type: NodePort
+serviceAccount:
+  annotations: {}
+  create: false
+  name: ''
+tolerations: []
